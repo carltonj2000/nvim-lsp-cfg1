@@ -17,3 +17,14 @@ lspconfig.sumneko_lua.setup({
 	},
 })
 
+lspconfig.gopls.setup({})
+
+lspconfig.rust_analyzer.setup({})
+
+lspconfig.html.setup({})
+
+lspconfig.tsserver.setup({})
+
+lspconfig.tailwindcss.setup({})
+
+lspconfig.cssls.setup({})

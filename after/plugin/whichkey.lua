@@ -18,7 +18,7 @@ local mappings = {
       s = {"<c-w>-", "Shorter"},
       w = {"<c-w>>", "Wider"},
       n = {"<c-w><", "Narrower"},
-    }
+    },
   },
   f = {
     name = "Find",
@@ -43,6 +43,11 @@ local mappings = {
     d = {"<cmd>lua vim.diagnostic.open_float()<cr>", "Details"},
     n = {"<cmd>lua vim.diagnostic.goto_next()<cr>", "Next"},
     p = {"<cmd>lua vim.diagnostic.goto_prev()<cr>", "Previous"},
+  },
+  ["<leader>"] = {
+    name = "Source",
+    c = {"<cmd>so %<cr>", "Current file"},
+    s = {"<cmd>source ~/.config/nvim/after/plugin/luasnip.lua<cr>", "Lua Snip"},
   },
   q = {"<cmd>qa<cr>","Quit All"},
   h = {"<cmd>noh<cr>","Stop Highlighting"},
