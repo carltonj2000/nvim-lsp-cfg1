@@ -17,6 +17,9 @@ Then installed and configures the plugins in the following order.
 - telescope - file finder, greper, browser
 - tokoyonight - color scheme
 
+- lspconfig, nvim-cmp, cmp-nvim-lsp 
+- mason, mason-lspconfig
+
 ### Code Histroy
 
 The code in this repository is based on the

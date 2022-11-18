@@ -25,6 +25,11 @@ return require('packer').startup(function(use)
   use('folke/tokyonight.nvim')
   
   use('neovim/nvim-lspconfig')
+  use('hrsh7th/nvim-cmp')
+  use('hrsh7th/cmp-nvim-lsp')
+
+  use("williamboman/mason.nvim")
+	use("williamboman/mason-lspconfig.nvim")
 
   if packer_bootstrap then
     require('packer').sync()
