@@ -1,7 +1,12 @@
 local wk = require("which-key")
-
 wk.setup({})
-
+-- terminal
+local Terminal = require("toggleterm.terminal").Terminal
+local toggle_lazygit = function()
+	local lazygit = Terminal:new({ cmd = "lazygit", direction = "float" })
+	return lazygit:toggle()
+end
+-- terminal
 local mappings = {
   s = {
     name = "Split Window",
@@ -58,8 +63,38 @@ local mappings = {
     n = {"<cmd>BufferLineCycleNext<cr>", "Next"},
     p = {"<cmd>BufferLineCyclePrev<cr>", "Previous"},
   },
+  t = {
+    name = "Toggle Term",
+    g = {toggle_lazygit, "Lazy Git"},
+    h = {"<cmd>ToggleTerm<cr>", "Horizonal"},
+    v = {"<cmd>ToggleTerm direction=vertical size=80<cr>", "Vertical"},
+    t = {"<cmd>ToggleTerm direction=tab<cr>", "Tab"},
+  },
   q = {"<cmd>qa<cr>","Quit All"},
   h = {"<cmd>noh<cr>","Stop Highlighting"},
 }
 
 wk.register(mappings, {prefix = "<leader>"})
+
+local mappingsI = {
+    e = {"<c-\\><c-n>", "Escape"},
+    j = {"<c-\\><c-n><c-w>j", "Down"},
+    k = {"<c-\\><c-n><c-w>k", "Up"},
+    h = {"<c-\\><c-n><c-w>h", "Left"},
+    l = {"<c-\\><c-n><c-w>l", "Right"},
+    p = {"<cmd>BufferLineCyclePrev<cr>", "Left Tab"},
+    n = {"<cmd>BufferLineCycleNext<cr>", "Right Tab"},
+    ["2"] = {"<cmd>2ToggleTerm direction=horizontal<cr>", "Term 2"},
+    ["3"] = {"<cmd>3ToggleTerm direction=horizontal<cr>", "Term 3"},
+    v = {
+      name = "Vertical",
+      ["2"] = {"<cmd>2ToggleTerm direction=vertical<cr>", "Term 2"},
+      ["3"] = {"<cmd>3ToggleTerm direction=vertical<cr>", "Term 3"},
+    },
+    t = {
+      name = "Tab",
+      ["2"] = {"<cmd>2ToggleTerm direction=tab<cr>", "Term 2"},
+      ["3"] = {"<cmd>3ToggleTerm direction=tab<cr>", "Term 3"},
+  },
+}
+wk.register(mappingsI, {prefix = "{", mode = "t"})
