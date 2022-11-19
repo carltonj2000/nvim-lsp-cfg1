@@ -13,3 +13,11 @@ vim.opt.breakindent = true
 vim.opt.cursorline = true
 vim.cmd[[colorscheme tokyonight]]
 
+vim.opt.clipboard:append { 'unnamedplus' }
+
+vim.api.nvim_create_autocmd("BufWritePre", {
+	pattern = "*",
+	callback = function()
+		vim.lsp.buf.format({ timeout_ms = 2000 })
+	end,
+})

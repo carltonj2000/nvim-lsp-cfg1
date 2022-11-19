@@ -21,6 +21,11 @@ Then installed and configures the plugins in the following order.
 - mason, mason-lspconfig
 - luasnip, cmp_luasnip, friendly-snippets 
 - lualine, bufferline, telescope-tabs, nvim-autopairs, nvim-colorizer
+- toggleterm, gitsign, clipboar copy config
+- treesitter, auto tags, format on save
+
+After installing tree sitter make sure to run `:TSUpdate` because
+you get errors until that is run.
 
 ### Code Histroy
 
