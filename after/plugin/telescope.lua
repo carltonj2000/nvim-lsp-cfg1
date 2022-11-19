@@ -23,6 +23,7 @@ telescope.setup({
 			theme = "dropdown",
 			previewer = false,
 			hijack_netrw = true,
+			path = "%:p:h",
 			cwd = telescope_buffer_dir(),
 			mappings = {
 				["i"] = {
