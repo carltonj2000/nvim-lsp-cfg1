@@ -23,10 +23,11 @@ local mappings = {
   f = {
     name = "Find",
     f = {"<cmd>Telescope find_files<cr>", "File"},
-    w = {"<cmd>Telescope live_grep<cr>", "Word"},
+    g = {"<cmd>Telescope live_grep<cr>", "Word"},
     b = {"<cmd>Telescope buffers<cr>", "Buffer"},
     t = {"<cmd>Telescope help_tags<cr>", "Tags"},
     e = {"<cmd>Telescope file_browser<cr>", "File Explorer"},
+    w = {"<cmd>Telescope telescope-tabs list_tabs<cr>", "Word"},
   },
   l = {
     name = "LSP",
@@ -48,6 +49,14 @@ local mappings = {
     name = "Source",
     c = {"<cmd>so %<cr>", "Current file"},
     s = {"<cmd>source ~/.config/nvim/after/plugin/luasnip.lua<cr>", "Lua Snip"},
+  },
+  w = {
+    name = "Tab/Workspace",
+    c = {"<cmd>tabedit<cr>", "Open"},
+    x = {"<c-w>c", "Close"},
+    -- also gt/gT for previous and next tab
+    n = {"<cmd>BufferLineCycleNext<cr>", "Next"},
+    p = {"<cmd>BufferLineCyclePrev<cr>", "Previous"},
   },
   q = {"<cmd>qa<cr>","Quit All"},
   h = {"<cmd>noh<cr>","Stop Highlighting"},

@@ -19,6 +19,7 @@ return require('packer').startup(function(use)
   use("folke/which-key.nvim")
 
   use('nvim-lua/plenary.nvim')
+  use('nvim-tree/nvim-web-devicons')
   use('nvim-telescope/telescope.nvim')
   use('nvim-telescope/telescope-file-browser.nvim')
 
@@ -36,6 +37,12 @@ return require('packer').startup(function(use)
   use('hrsh7th/cmp-buffer')
   use('hrsh7th/cmp-path')
   use("rafamadriz/friendly-snippets")
+
+	use("nvim-lualine/lualine.nvim")
+  use('akinsho/bufferline.nvim')
+  use('LukasPietzschmann/telescope-tabs')
+	use("windwp/nvim-autopairs")
+	use("norcalli/nvim-colorizer.lua")
 
   if packer_bootstrap then
     require('packer').sync()

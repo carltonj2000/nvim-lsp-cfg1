@@ -20,6 +20,7 @@ Then installed and configures the plugins in the following order.
 - lspconfig, nvim-cmp, cmp-nvim-lsp 
 - mason, mason-lspconfig
 - luasnip, cmp_luasnip, friendly-snippets 
+- lualine, bufferline, telescope-tabs, nvim-autopairs, nvim-colorizer
 
 ### Code Histroy
 
