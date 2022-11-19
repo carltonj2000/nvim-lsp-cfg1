@@ -6,6 +6,10 @@ local actions = require("telescope.actions")
 
 local fb_actions = require("telescope").extensions.file_browser.actions
 
+local function telescope_buffer_dir()
+	return vim.fn.expand("%:p:h")
+end
+
 telescope.setup({
 	defaults = {
 		mappings = {
@@ -19,6 +23,7 @@ telescope.setup({
 			theme = "dropdown",
 			previewer = false,
 			hijack_netrw = true,
+			cwd = telescope_buffer_dir(),
 			mappings = {
 				["i"] = {
 					["<C-w>"] = function()
