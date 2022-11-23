@@ -9,11 +9,11 @@ vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 vim.opt.autoindent = true
 vim.opt.breakindent = true
-
+vim.opt.colorcolumn = "80"
 vim.opt.cursorline = true
-vim.cmd[[colorscheme tokyonight]]
+vim.cmd([[colorscheme tokyonight]])
 
-vim.opt.clipboard:append { 'unnamedplus' }
+vim.opt.clipboard:append({ "unnamedplus" })
 
 vim.api.nvim_create_autocmd("BufWritePre", {
 	pattern = "*",
