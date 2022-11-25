@@ -54,6 +54,9 @@ return require("packer").startup(function(use)
 	use("jose-elias-alvarez/null-ls.nvim")
 	use("windwp/nvim-ts-autotag")
 
+	use("numToStr/Comment.nvim")
+	use("JoosepAlviste/nvim-ts-context-commentstring")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
