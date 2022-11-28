@@ -15,6 +15,11 @@ vim.cmd([[colorscheme tokyonight]])
 
 vim.opt.clipboard:append({ "unnamedplus" })
 
+-- nvim-tree recommened options
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+vim.opt.termguicolors = true
+
 vim.api.nvim_create_autocmd("BufWritePre", {
 	pattern = "*",
 	callback = function()

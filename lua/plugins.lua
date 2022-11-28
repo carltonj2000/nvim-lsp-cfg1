@@ -57,6 +57,8 @@ return require("packer").startup(function(use)
 	use("numToStr/Comment.nvim")
 	use("JoosepAlviste/nvim-ts-context-commentstring")
 
+	use("nvim-tree/nvim-tree.lua")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
