@@ -26,7 +26,7 @@ ls.add_snippets("all", {
 	s("edfc", {
 		t("export default function "),
 		i(1, "name"),
-		t({ "() {", "\t<div>" }),
+		t({ "() {", "\treturn <div>" }),
 		i(0, "default function output"),
 		t({ "</div>", "}" }),
 	}),
