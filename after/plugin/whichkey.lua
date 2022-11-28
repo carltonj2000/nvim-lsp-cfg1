@@ -70,7 +70,12 @@ local mappings = {
 		v = { "<cmd>ToggleTerm direction=vertical size=80<cr>", "Vertical" },
 		t = { "<cmd>ToggleTerm direction=tab<cr>", "Tab" },
 	},
-	e = { "<cmd>NvimTreeToggle<cr>", "File Tree Explorer" },
+	e = {
+		name = "Explor File Tree",
+		e = { "<cmd>NvimTreeToggle<cr>", "Toggle" },
+		a = { "<cmd>NvimTreeFocus<cr>", "Focus/Active" },
+		f = { "<cmd>NvimTreeFocus<cr>", "Find" },
+	},
 	q = { "<cmd>qa<cr>", "Quit All" },
 	h = { "<cmd>noh<cr>", "Stop Highlighting" },
 }
