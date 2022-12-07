@@ -59,6 +59,8 @@ return require("packer").startup(function(use)
 
 	use("nvim-tree/nvim-tree.lua")
 
+	use("lukas-reineke/indent-blankline.nvim")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
