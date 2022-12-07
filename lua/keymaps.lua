@@ -2,8 +2,8 @@ local keymap = vim.keymap
 
 keymap.set("n", "<F1>", "<cmd>echo<cr>")
 keymap.set("i", "<F1>", "<esc><cmd>echo<cr>")
+keymap.set("i", "vv", "<esc>")
 keymap.set("n", "<c-a>", "ggvG$")
-keymap.set("n", "vv", "<esc>")
 keymap.set("t", "<<", "<c-\\><c-n>")
 keymap.set("t", "<c-l>", "<right>")
 keymap.set("t", "<a-l>", "<c-\\><c-n><c-w>l")
