@@ -1,5 +1,11 @@
 ## NeoVIM Configuration
 
+### Commands
+
+| Cmd          | Description                            |
+| ------------ | -------------------------------------- |
+| <leader-d-d> | show diag window, also enter window x2 |
+
 ### Code Creation
 
 ```bash
@@ -17,9 +23,9 @@ Then installed and configures the plugins in the following order.
 - telescope - file finder, greper, browser
 - tokoyonight - color scheme
 
-- lspconfig, nvim-cmp, cmp-nvim-lsp 
+- lspconfig, nvim-cmp, cmp-nvim-lsp
 - mason, mason-lspconfig
-- luasnip, cmp_luasnip, friendly-snippets 
+- luasnip, cmp_luasnip, friendly-snippets
 - lualine, bufferline, telescope-tabs, nvim-autopairs, nvim-colorizer
 - toggleterm, gitsign, clipboar copy config
 - treesitter, auto tags, format on save
