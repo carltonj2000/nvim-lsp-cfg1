@@ -18,11 +18,10 @@ lspconfig.setup({
 		"gopls",
 		"html",
 		"marksman",
+		"prismals",
 		"rust_analyzer",
 		"sumneko_lua",
 		"tailwindcss",
 		"tsserver",
 	},
 })
-
-

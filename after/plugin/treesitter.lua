@@ -18,6 +18,7 @@ ts.setup({
 		"toml",
 		"fish",
 		"php",
+		"prisma",
 		"json",
 		"yaml",
 		"css",
