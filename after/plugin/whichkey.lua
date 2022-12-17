@@ -17,6 +17,7 @@ local mappings = {
 		k = { "<c-w>k", "Up" },
 		h = { "<c-w>h", "Left" },
 		l = { "<c-w>l", "Right" },
+		o = { "<c-w>o", "Only - Close Others" },
 		r = {
 			name = "Resize",
 			t = { "<c-w>+", "Taller" },
@@ -57,11 +58,12 @@ local mappings = {
 	},
 	w = {
 		name = "Tab/Workspace",
-		c = { "<cmd>tabedit<cr>", "Open" },
-		x = { "<c-w>c", "Close" },
+		n = { "<cmd>tabedit<cr>", "New" },
+		o = { "<cmd>tabnew %<cr>", "Open With Present File" },
+		c = { "<c-w>c", "Close" },
 		-- also gt/gT for previous and next tab
-		n = { "<cmd>BufferLineCycleNext<cr>", "Next" },
-		p = { "<cmd>BufferLineCyclePrev<cr>", "Previous" },
+		h = { "<cmd>BufferLineCycleNext<cr>", "Next" },
+		l = { "<cmd>BufferLineCyclePrev<cr>", "Previous" },
 	},
 	t = {
 		name = "Toggle Term",
