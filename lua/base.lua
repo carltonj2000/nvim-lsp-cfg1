@@ -11,7 +11,14 @@ vim.opt.autoindent = true
 vim.opt.breakindent = true
 vim.opt.colorcolumn = "80"
 vim.opt.cursorline = true
-vim.cmd([[colorscheme tokyonight]])
+
+function ColorSet()
+	vim.cmd.colorscheme("tokyonight")
+	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+end
+
+ColorSet()
 
 vim.opt.clipboard:append({ "unnamedplus" })
 
