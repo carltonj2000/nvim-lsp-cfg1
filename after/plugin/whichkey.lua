@@ -44,6 +44,7 @@ local mappings = {
 		r = { "<cmd>lua vim.lsp.buf.references()<cr>", "List Reference" },
 		m = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename Symbol" },
 		a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
+		g = { toggle_lazygit, "Lazy Git - I Know Not LSP" },
 	},
 	d = {
 		name = "Diagnostic",
