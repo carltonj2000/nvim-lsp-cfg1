@@ -79,8 +79,9 @@ local mappings = {
 		a = { "<cmd>NvimTreeFocus<cr>", "Focus/Active" },
 		f = { "<cmd>NvimTreeFocus<cr>", "Find" },
 	},
-	q = { "<cmd>qa<cr>", "Quit All" },
 	h = { "<cmd>noh<cr>", "Stop Highlighting" },
+	q = { "<cmd>qa<cr>", "Quit All" },
+	x = { "<cmd>bd<cr>", "Close Buffer" },
 }
 
 wk.register(mappings, { prefix = "<leader>" })

@@ -4,6 +4,9 @@
 
 | Cmd          | Description                            |
 | ------------ | -------------------------------------- |
+| gcc          | comment current line                   |
+| gbc          | comment current line via block comment |
+| gcip         | comment paragraph                      |
 | <leader-d-d> | show diag window, also enter window x2 |
 
 ### Code Creation
