@@ -17,6 +17,7 @@ lspconfig.setup({
     "dockerls",
     "gopls",
     "html",
+    "jsonls",
     "marksman",
     "prismals",
     "rust_analyzer",
