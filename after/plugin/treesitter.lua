@@ -23,6 +23,7 @@ ts.setup({
     "json",
     "yaml",
     "css",
+    "scss",
     "html",
     "lua",
   },
