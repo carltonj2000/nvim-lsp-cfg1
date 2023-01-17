@@ -42,8 +42,8 @@ cmp.setup({
 		end,
 	},
 	mapping = {
-		["<C-k>"] = cmp.mapping.scroll_docs(-4),
-		["<C-j>"] = cmp.mapping.scroll_docs(4),
+		-- ["<C-k>"] = cmp.mapping.scroll_docs(-4),
+		-- ["<C-j>"] = cmp.mapping.scroll_docs(4),
 
 		["<C-x>"] = cmp.mapping.abort(),
 		["<CR>"] = cmp.mapping.confirm({ select = false }),
@@ -84,7 +84,7 @@ cmp.setup({
 			end
 		end, { "i", "s" }),
 
-		["J"] = cmp.mapping(function(fallback)
+		["<c-j>"] = cmp.mapping(function(fallback)
 			local col = vim.fn.col(".") - 1
 
 			if cmp.visible() then
@@ -96,7 +96,7 @@ cmp.setup({
 			end
 		end, { "i", "s" }),
 
-		["K"] = cmp.mapping(function(fallback)
+		["<c-k>"] = cmp.mapping(function(fallback)
 			if cmp.visible() then
 				cmp.select_prev_item(select_opts)
 			else
