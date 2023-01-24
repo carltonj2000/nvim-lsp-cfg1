@@ -6,10 +6,6 @@ local toggle_lazygit = function()
 	local lazygit = Terminal:new({ cmd = "lazygit", direction = "float" })
 	return lazygit:toggle()
 end
-keymap.set("t", "<a-l>", "<c-\\><c-n><c-w>l")
-keymap.set("t", "<a-j>", "<c-\\><c-n><c-w>j")
-keymap.set("t", "<a-k>", "<c-\\><c-n><c-w>k")
-keymap.set("t", "<a-h>", "<c-\\><c-n><c-w>h")
 -- terminal
 local mappings = {
 	s = {
