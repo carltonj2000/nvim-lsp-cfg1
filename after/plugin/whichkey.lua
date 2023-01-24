@@ -6,6 +6,10 @@ local toggle_lazygit = function()
 	local lazygit = Terminal:new({ cmd = "lazygit", direction = "float" })
 	return lazygit:toggle()
 end
+keymap.set("t", "<a-l>", "<c-\\><c-n><c-w>l")
+keymap.set("t", "<a-j>", "<c-\\><c-n><c-w>j")
+keymap.set("t", "<a-k>", "<c-\\><c-n><c-w>k")
+keymap.set("t", "<a-h>", "<c-\\><c-n><c-w>h")
 -- terminal
 local mappings = {
 	s = {
@@ -45,6 +49,13 @@ local mappings = {
 		m = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename Symbol" },
 		a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
 		g = { toggle_lazygit, "Lazy Git - I Know Not LSP" },
+	},
+	m = {
+		name = "Move To Split",
+		j = { "<c-\\><c-n><c-w>j", "Down" },
+		k = { "<c-\\><c-n><c-w>k", "Up" },
+		h = { "<c-\\><c-n><c-w>h", "Left" },
+		l = { "<c-\\><c-n><c-w>l", "Right" },
 	},
 	d = {
 		name = "Diagnostic",
