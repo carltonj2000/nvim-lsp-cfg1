@@ -46,7 +46,7 @@ local mappings = {
 		a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
 		g = { toggle_lazygit, "Lazy Git - I Know Not LSP" },
 	},
-	m = {
+	a = {
 		name = "Move To Split",
 		j = { "<c-\\><c-n><c-w>j", "Down" },
 		k = { "<c-\\><c-n><c-w>k", "Up" },
