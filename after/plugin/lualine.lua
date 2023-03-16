@@ -32,8 +32,8 @@ lualine.setup({
 			--      'filetype'
 		},
 		--lualine_y = { "progress" },
-		lualine_y = {},
-		lualine_z = { "location" },
+		lualine_y = { "location" },
+		lualine_z = { "winnr" },
 	},
 	inactive_sections = {
 		lualine_a = {},
@@ -46,7 +46,7 @@ lualine.setup({
 			},
 		},
 		lualine_x = { "location" },
-		lualine_y = {},
+		lualine_y = { "winnr" },
 		lualine_z = {},
 	},
 	tabline = {},
