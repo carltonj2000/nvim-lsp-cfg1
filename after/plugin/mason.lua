@@ -23,7 +23,7 @@ lspconfig.setup({
 		"prismals",
 		"rust_analyzer",
 		"svelte",
-		"sumneko_lua",
+		"lua_ls",
 		"tailwindcss",
 		"tsserver",
 	},
