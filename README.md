@@ -24,7 +24,7 @@ Then installed and configures the plugins in the following order.
 
 - which-key
 - telescope - file finder, greper, browser
-- tokoyonight - color scheme
+- tokyonight - color scheme
 
 - lspconfig, nvim-cmp, cmp-nvim-lsp
 - mason, mason-lspconfig
