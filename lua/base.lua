@@ -11,14 +11,15 @@ vim.opt.autoindent = true
 vim.opt.breakindent = true
 vim.opt.colorcolumn = "80"
 vim.opt.cursorline = true
+vim.opt.swapfile = false
 
 function ColorSet()
-	vim.cmd.colorscheme("tokyonight")
-	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-	vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
-	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-	vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = "none" })
-	vim.api.nvim_set_hl(0, "NvimTreeNormal", { bg = "none" })
+  vim.cmd.colorscheme("tokyonight")
+  vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+  vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
+  vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+  vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = "none" })
+  vim.api.nvim_set_hl(0, "NvimTreeNormal", { bg = "none" })
 end
 
 ColorSet()
@@ -31,8 +32,8 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 
 vim.api.nvim_create_autocmd("BufWritePre", {
-	pattern = "*",
-	callback = function()
-		vim.lsp.buf.format({ timeout_ms = 2000 })
-	end,
+  pattern = "*",
+  callback = function()
+    vim.lsp.buf.format({ timeout_ms = 2000 })
+  end,
 })
